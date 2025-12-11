@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesus | Desarrollador & Diseñador de Paisajes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="header" id="header">
+    <div class="header__container">
+      <a href="#inicio" class="header__logo">
+        <span class="logo__icon">J</span>
+        <span class="logo__text">Jesus</span>
+      </a>
+      
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link active">Inicio</a></li>
+          <li><a href="#sobre-mi" class="nav__link">Sobre Mí</a></li>
+          <li><a href="#habilidades" class="nav__link">Habilidades</a></li>
+          <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+          <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+          <span class="theme-toggle__icon theme-toggle__icon--light">☀️</span>
+          <span class="theme-toggle__icon theme-toggle__icon--dark">🌙</span>
+        </button>
+        
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+      <div class="hero__background">
+        <div class="hero__shape hero__shape--1"></div>
+        <div class="hero__shape hero__shape--2"></div>
+        <div class="hero__shape hero__shape--3"></div>
+      </div>
+      
+      <div class="hero__container">
+        <div class="hero__content">
+          <p class="hero__greeting">¡Hola! Soy</p>
+          <h1 class="hero__title">Jesus</h1>
+          <p class="hero__subtitle">Desarrollador Web & Diseñador de Paisajes</p>
+          <p class="hero__description">
+            Combino la creatividad del diseño paisajístico con la precisión del desarrollo web 
+            para crear experiencias únicas tanto en espacios físicos como digitales.
+          </p>
+          
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__number" id="years-experience">0</span>
+              <span class="stat__label">Años de experiencia</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number" id="projects-count">0</span>
+              <span class="stat__label">Proyectos completados</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number" id="clients-count">0</span>
+              <span class="stat__label">Clientes satisfechos</span>
+            </div>
+          </div>
+          
+          <div class="hero__cta">
+            <a href="#proyectos" class="btn btn--primary">Ver Proyectos</a>
+            <a href="#contacto" class="btn btn--secondary">Contactar</a>
+          </div>
+        </div>
+        
+        <div class="hero__visual">
+          <div class="hero__image-container">
+            <div class="hero__image-placeholder">
+              <span>👨‍💻</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <a href="#sobre-mi" class="scroll-indicator" aria-label="Scroll hacia abajo">
+        <span class="scroll-indicator__mouse">
+          <span class="scroll-indicator__wheel"></span>
+        </span>
+        <span class="scroll-indicator__text">Scroll</span>
+      </a>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section class="section about" id="sobre-mi">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__tag">Conóceme</span>
+          <h2 class="section__title">Sobre Mí</h2>
+        </header>
+        
+        <div class="about__content">
+          <div class="about__text">
+            <p class="about__intro">
+              Soy un profesional apasionado por crear experiencias memorables, 
+              ya sea transformando espacios exteriores o desarrollando interfaces web intuitivas.
+            </p>
+            
+            <div class="about__details" id="about-details">
+              <p>
+                Mi trayectoria comenzó en el mundo del diseño paisajístico, donde aprendí 
+                la importancia de la planificación, los materiales de calidad y la atención 
+                al detalle. Trabajar con elementos como tezontle, grava sílica y crear 
+                jardineras decorativas me enseñó que cada proyecto es único.
+              </p>
+              <p>
+                Paralelamente, descubrí mi pasión por el desarrollo web. Hoy trabajo con 
+                tecnologías como Next.js, React y JavaScript moderno, aplicando la misma 
+                meticulosidad que uso en mis proyectos de paisajismo.
+              </p>
+              <p>
+                Esta combinación única me permite abordar problemas desde perspectivas 
+                diferentes, aportando creatividad y estructura a cada proyecto.
+              </p>
+            </div>
+            
+            <button class="btn-expand" id="btn-about-toggle" aria-expanded="false">
+              <span class="btn-expand__text">Ver más</span>
+              <span class="btn-expand__icon">↓</span>
+            </button>
+          </div>
+          
+          <div class="about__info">
+            <div class="info-card">
+              <h3 class="info-card__title">Información</h3>
+              <ul class="info-card__list">
+                <li><strong>Ubicación:</strong> Ciudad de México</li>
+                <li><strong>Email:</strong> jesus@email.com</li>
+                <li><strong>Idiomas:</strong> Español, English</li>
+                <li><strong>Disponibilidad:</strong> Freelance / Tiempo completo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="section skills" id="habilidades">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__tag">Expertise</span>
+          <h2 class="section__title">Habilidades</h2>
+        </header>
+        
+        <div class="skills__tabs">
+          <button class="skills__tab active" data-tab="tech">Desarrollo Web</button>
+          <button class="skills__tab" data-tab="landscape">Paisajismo</button>
+          <button class="skills__tab" data-tab="soft">Soft Skills</button>
+        </div>
+        
+        <div class="skills__content">
+          <div class="skills__panel active" id="panel-tech">
+            <!-- Se llenará con JavaScript -->
+          </div>
+          <div class="skills__panel" id="panel-landscape">
+            <!-- Se llenará con JavaScript -->
+          </div>
+          <div class="skills__panel" id="panel-soft">
+            <!-- Se llenará con JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="section projects" id="proyectos">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__tag">Portfolio</span>
+          <h2 class="section__title">Proyectos Destacados</h2>
+        </header>
+        
+        <div class="projects__filters">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="landscape">Paisajismo</button>
+        </div>
+        
+        <div class="projects__grid" id="projects-grid">
+          <!-- Se llenará con JavaScript -->
+        </div>
+        
+        <div class="projects__badge">
+          <span id="filtered-count">0</span> proyectos mostrados
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificaciones -->
+    <section class="section certifications" id="certificaciones">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__tag">Formación</span>
+          <h2 class="section__title">Certificaciones</h2>
+        </header>
+        
+        <div class="certifications__grid" id="certifications-grid">
+          <!-- Se llenará con JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section contact" id="contacto">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__tag">Hablemos</span>
+          <h2 class="section__title">Contacto</h2>
+        </header>
+        
+        <div class="contact__content">
+          <div class="contact__info">
+            <h3>¿Tienes un proyecto en mente?</h3>
+            <p>
+              Ya sea que necesites un sitio web moderno o un diseño paisajístico único, 
+              estoy aquí para ayudarte a convertir tu visión en realidad.
+            </p>
+            
+            <div class="contact__methods">
+              <a href="mailto:jesus@email.com" class="contact__method">
+                <span class="contact__method-icon">✉️</span>
+                <span>jesus@email.com</span>
+              </a>
+              <a href="tel:+525512345678" class="contact__method">
+                <span class="contact__method-icon">📱</span>
+                <span>+52 55 1234 5678</span>
+              </a>
+              <div class="contact__method">
+                <span class="contact__method-icon">📍</span>
+                <span>Ciudad de México, México</span>
+              </div>
+            </div>
+            
+            <div class="contact__social">
+              <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+              <a href="#" class="social-link" aria-label="GitHub">gh</a>
+              <a href="#" class="social-link" aria-label="Instagram">ig</a>
+            </div>
+          </div>
+          
+          <form class="contact__form" id="contact-form" novalidate>
+            <div class="form__group">
+              <label for="name" class="form__label">Nombre *</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                class="form__input" 
+                placeholder="Tu nombre completo"
+                required
+                autocomplete="name"
+              >
+              <span class="form__error" id="name-error"></span>
+            </div>
+            
+            <div class="form__group">
+              <label for="email" class="form__label">Email *</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                class="form__input" 
+                placeholder="tu@email.com"
+                required
+                autocomplete="email"
+              >
+              <span class="form__error" id="email-error"></span>
+            </div>
+            
+            <div class="form__group">
+              <label for="subject" class="form__label">Asunto *</label>
+              <select id="subject" name="subject" class="form__input form__select" required>
+                <option value="">Selecciona un asunto</option>
+                <option value="web">Proyecto Web</option>
+                <option value="landscape">Proyecto Paisajismo</option>
+                <option value="both">Ambos</option>
+                <option value="other">Otro</option>
+              </select>
+              <span class="form__error" id="subject-error"></span>
+            </div>
+            
+            <div class="form__group">
+              <label for="message" class="form__label">Mensaje *</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                class="form__input form__textarea" 
+                placeholder="Cuéntame sobre tu proyecto..."
+                rows="5"
+                required
+              ></textarea>
+              <span class="form__error" id="message-error"></span>
+            </div>
+            
+            <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+              <span class="btn__text">Enviar Mensaje</span>
+              <span class="btn__loader"></span>
+            </button>
+            
+            <div class="form__status" id="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <p class="footer__copyright">
+          © <span id="current-year"></span> Jesus. Todos los derechos reservados.
+        </p>
+        <p class="footer__tagline">Creando experiencias únicas 🌿</p>
+      </div>
+      
+      <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+        ↑
+      </button>
+    </div>
+  </footer>
+</body>
+</html>
