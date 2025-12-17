@@ -958,11 +958,6 @@ ul, ol {
   font-size: 1.25rem;
 }
 
-.contact__social {
-  display: flex;
-  gap: var(--space-md);
-}
-
 .social-link {
   width: 44px;
   height: 44px;
