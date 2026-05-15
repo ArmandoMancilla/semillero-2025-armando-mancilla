@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jose Armando Mancilla Romero | Actuarial Scientist</title>
-    <meta name="description" content="CV Interactivo de Jose Armando Mancilla Romero - Actuario especializado en análisis de riesgo crediticio y desarrollo de modelos analíticos automatizados.">
+    <title>Jose Armando Mancilla Romero | Financial & Data Analyst</title>
+    <meta name="description" content="Interactive CV of Jose Armando Mancilla Romero - Actuarial professional specializing in credit risk analysis and automated analytical model development.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://armandomancilla.github.io/semillero-2025-armando-mancilla/02-javascript/">
+    <meta property="og:title" content="Jose Armando Mancilla Romero | Financial & Data Analyst">
+    <meta property="og:description" content="Actuarial professional (ITAM) with hands-on experience in credit risk, financial modeling, and Python-driven process automation.">
+    <meta property="og:image" content="https://i.postimg.cc/XJsLgrdg/cvfoto.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jose Armando Mancilla Romero | Financial & Data Analyst">
+    <meta name="twitter:description" content="Actuarial professional (ITAM) with hands-on experience in credit risk, financial modeling, and Python-driven process automation.">
+    <meta name="twitter:image" content="https://i.postimg.cc/XJsLgrdg/cvfoto.jpg">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,18 +42,19 @@
                     <li><a href="#sobre-mi" class="nav__link">About Me</a></li>
                     <li><a href="#habilidades" class="nav__link">Skills</a></li>
                     <li><a href="#experiencia" class="nav__link">Experience</a></li>
+                    <li><a href="#proyectos" class="nav__link">Projects</a></li>
                     <li><a href="#certificaciones" class="nav__link">Education</a></li>
                     <li><a href="#contacto" class="nav__link">Contact</a></li>
                 </ul>
             </nav>
 
             <div class="header__actions">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
                     <span class="theme-toggle__icon theme-toggle__icon--light">☀️</span>
                     <span class="theme-toggle__icon theme-toggle__icon--dark">🌙</span>
                 </button>
 
-                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
                     <span class="menu-toggle__bar"></span>
                     <span class="menu-toggle__bar"></span>
                     <span class="menu-toggle__bar"></span>
@@ -62,7 +76,7 @@
                 <div class="hero__content">
                     <p class="hero__greeting">Hello, I am</p>
                     <h1 class="hero__title">Jose Armando<br>Mancilla Romero</h1>
-                    <p class="hero__subtitle">Actuarial Scientist</p>
+                    <p class="hero__subtitle">Financial & Data Analyst</p>
                     <p class="hero__description">
                         Finance professional with experience in credit risk assessment and the development of automated analytical models. Passionate about applying technology and data science to optimize risk management.
                     </p>
@@ -77,24 +91,27 @@
                             <span class="stat__label">Projects</span>
                         </div>
                         <div class="stat">
-                            <span class="stat__number" id="clients-count">0</span>
+                            <span class="stat__number" id="clients-count">0</span><span>+</span>
                             <span class="stat__label">Credit Analysis</span>
                         </div>
                     </div>
 
                     <div class="hero__cta">
                         <a href="#contacto" class="btn btn--primary">
-                            <span class="btn__text">Contactme</span>
+                            <span class="btn__text">Contact Me</span>
                         </a>
                         <a href="#experiencia" class="btn btn--secondary">
                             <span class="btn__text">View Experience</span>
+                        </a>
+                        <a href="cv-jose-armando-mancilla.pdf" class="btn btn--secondary" download>
+                            <span class="btn__text">Download CV</span>
                         </a>
                     </div>
                 </div>
 
                 <div class="hero__visual">
                     <div class="hero__image-container">
-                        <img src="https://i.postimg.cc/XJsLgrdg/cvfoto.jpg" alt="Imagen hero" class="hero__image">
+                        <img src="https://i.postimg.cc/XJsLgrdg/cvfoto.jpg" alt="Profile photo" class="hero__image">
                     </div>
                 </div>
             </div>
@@ -118,29 +135,27 @@
                 <div class="about__content">
                     <div class="about__text">
                         <p class="about__intro">
-                            I am a finance professional with experience in credit risk assessment and the development of automated analytical models. I am passionate about applying technology and data science to optimize risk management.
+                            Actuarial professional (ITAM) with hands-on experience in credit risk, financial modeling, and Python-driven process automation. Built end-to-end tools ranging from SAT (CFDI) data extraction pipelines to credit pre-qualification models and financial projections. Seeking a hybrid finance-data role to apply and grow skills in advanced analytics, machine learning, and applied AI.
                         </p>
 
-                        <div class="about__details" id="about-details">
-                            <p>
-                                I have expertise in CFDI invoicing analysis, Python-based automation, and tax compliance assessment. My approach combines actuarial rigor with innovative technological solutions.
-                            </p>
-                            <p>
-                                I have actively participated in credit committees, contributing technical and business insights that have allowed for more informed decisions regarding the granting of loans.
-                            </p>
-                        </div>
-
-                        <button class="btn-expand" id="btn-about-toggle" aria-expanded="false" aria-controls="about-details">
-                            <span class="btn-expand__text">View more</span>
-                            <span class="btn-expand__icon">▼</span>
+                        <button class="btn-expand" id="btn-about-toggle" aria-expanded="false">
+                            <span class="btn-expand__text">Read more</span>
+                            <span class="btn-expand__icon" aria-hidden="true">▼</span>
                         </button>
+
+                        <div class="about__details" id="about-details">
+                            <p>Built CFDI/XML data extraction pipelines that automated SAT invoicing analysis, significantly reducing manual processing time for credit evaluations.</p>
+                            <p>Developed credit pre-qualification scoring models combining financial statement analysis, DSCR metrics, and tax compliance indicators to streamline SME lending decisions.</p>
+                            <p>Actively participated in credit committees at Creze, translating quantitative risk models into clear business recommendations for non-technical stakeholders.</p>
+                            <p>Holds an Ethereum Developer Professional certification (Blockdemy), with interest in applying blockchain and DeFi concepts to credit and fintech applications.</p>
+                        </div>
                     </div>
 
                     <aside class="info-card">
                         <h3 class="info-card__title">Personal Information</h3>
                         <ul class="info-card__list">
                             <li><strong>Name:</strong> Jose Armando Mancilla Romero</li>
-                            <li><strong>Profession:</strong> Actuarial Scientist</li>
+                            <li><strong>Profession:</strong> Financial & Data Analyst</li>
                             <li><strong>Location:</strong> Ciudad de México</li>
                             <li><strong>Email:</strong> mancilla491@gmail.com</li>
                             <li><strong>Telephone:</strong> +52 1 55-5107-8915</li>
@@ -155,7 +170,7 @@
             <div class="container">
                 <header class="section__header">
                     <span class="section__tag">Skills</span>
-                    <h2 class="section__title">Mi skill set</h2>
+                    <h2 class="section__title">My Skill Set</h2>
                 </header>
 
                 <div class="skills__tabs" role="tablist">
@@ -187,8 +202,19 @@
                 <div class="projects__grid" id="projects-grid"></div>
 
                 <div class="projects__badge">
-                    Mostrando <span id="filtered-count">0</span> professional achievements
+                    Showing <span id="filtered-count">0</span> professional achievements
                 </div>
+            </div>
+        </section>
+
+        <!-- Personal Projects Section -->
+        <section class="section projects" id="proyectos">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__tag">Projects</span>
+                    <h2 class="section__title">Personal Projects</h2>
+                </header>
+                <div class="projects__grid" id="personal-projects-grid"></div>
             </div>
         </section>
 
@@ -196,7 +222,7 @@
         <section class="section certifications" id="certificaciones">
             <div class="container">
                 <header class="section__header">
-                    <span class="section__tag">Educatoin</span>
+                    <span class="section__tag">Education</span>
                     <h2 class="section__title">Academic background</h2>
                 </header>
 
@@ -234,32 +260,34 @@
                             </div>
                         </div>
 
-                        <li>
-                            <a href="https://linkedin.com/in/josé-armando-mancilla-romero-3125a7208/" target="_blank">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="#0A66C2" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6C1.12 6 0 4.88 0 3.5C0 2.12 1.12 1 2.5 1C3.88 1 4.98 2.12 4.98 3.5ZM0.22 8H4.78V24H0.22V8ZM8.45 8H12.82V10.02H12.88C13.47 8.88 14.97 7.68 17.19 7.68C22.07 7.68 23 10.82 23 15.14V24H18.44V15.92C18.44 13.8 18.39 11.17 15.77 11.17C13.12 11.17 12.72 13.38 12.72 15.77V24H8.16V8H8.45Z"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/ArmandoMancilla" target="_blank">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.41 7.86 10.94.58.11.79-.25.79-.56v-2.01c-3.2.7-3.87-1.37-3.87-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.73.08-.72.08-.72 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.72 0-1.26.45-2.3 1.19-3.11-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.19a11.1 11.1 0 0 1 5.8 0c2.2-1.5 3.17-1.19 3.17-1.19.64 1.59.24 2.77.12 3.06.74.81 1.18 1.85 1.18 3.11 0 4.46-2.69 5.42-5.25 5.7.42.36.8 1.08.8 2.18v3.23c0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
-                            </svg>
-                            </a>
-                        </li>
+                        <ul class="contact__social">
+                            <li>
+                                <a href="https://linkedin.com/in/josé-armando-mancilla-romero-3125a7208/" target="_blank" aria-label="LinkedIn">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="#0A66C2" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6C1.12 6 0 4.88 0 3.5C0 2.12 1.12 1 2.5 1C3.88 1 4.98 2.12 4.98 3.5ZM0.22 8H4.78V24H0.22V8ZM8.45 8H12.82V10.02H12.88C13.47 8.88 14.97 7.68 17.19 7.68C22.07 7.68 23 10.82 23 15.14V24H18.44V15.92C18.44 13.8 18.39 11.17 15.77 11.17C13.12 11.17 12.72 13.38 12.72 15.77V24H8.16V8H8.45Z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/ArmandoMancilla" target="_blank" aria-label="GitHub">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.41 7.86 10.94.58.11.79-.25.79-.56v-2.01c-3.2.7-3.87-1.37-3.87-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.73.08-.72.08-.72 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.72 0-1.26.45-2.3 1.19-3.11-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.19a11.1 11.1 0 0 1 5.8 0c2.2-1.5 3.17-1.19 3.17-1.19.64 1.59.24 2.77.12 3.06.74.81 1.18 1.85 1.18 3.11 0 4.46-2.69 5.42-5.25 5.7.42.36.8 1.08.8 2.18v3.23c0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
 
                     <form class="contact__form" id="contact-form" novalidate>
                         <div class="form__group">
                             <label for="name" class="form__label">Name</label>
-                            <input type="text" id="name" name="name" class="form__input" placeholder="Tu nombre" required>
+                            <input type="text" id="name" name="name" class="form__input" placeholder="Your name" required>
                             <span class="form__error" id="name-error"></span>
                         </div>
 
                         <div class="form__group">
                             <label for="email" class="form__label">Email</label>
-                            <input type="email" id="email" name="email" class="form__input" placeholder="tu@email.com" required>
+                            <input type="email" id="email" name="email" class="form__input" placeholder="your@email.com" required>
                             <span class="form__error" id="email-error"></span>
                         </div>
 
@@ -277,7 +305,7 @@
 
                         <div class="form__group">
                             <label for="message" class="form__label">Message</label>
-                            <textarea id="message" name="message" class="form__input form__textarea" placeholder="Cuéntame sobre tu proyecto o propuesta..." required></textarea>
+                            <textarea id="message" name="message" class="form__input form__textarea" placeholder="Tell me about your project or proposal..." required></textarea>
                             <span class="form__error" id="message-error"></span>
                         </div>
 
@@ -298,10 +326,10 @@
         <div class="container">
             <div class="footer__content">
                 <p class="footer__copyright">© <span id="current-year">2024</span> Jose Armando Mancilla Romero</p>
-                <p class="footer__tagline">Actuarial Scientist | Credit Risk Analyst</p>
+                <p class="footer__tagline">Financial & Data Analyst | Credit Risk Analyst</p>
             </div>
 
-            <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">↑</button>
+            <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
         </div>
     </footer>
 

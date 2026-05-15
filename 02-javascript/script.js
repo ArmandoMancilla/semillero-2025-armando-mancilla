@@ -9,116 +9,134 @@
 
 const skillsData = {
   tech: [
-    { name: 'Python', level: 'Avanzado', progress: 85, icon: '🐍' },
-    { name: 'R', level: 'Avanzado', progress: 80, icon: '📊' },
-    { name: 'Advanced Excel', level: 'Experto', progress: 95, icon: '📗' },
-    { name: 'HTML/CSS', level: 'Intermedio', progress: 70, icon: '🌐' },
-    { name: 'CFDI/XML', level: 'Experto', progress: 90, icon: '📄' },
-    { name: 'SQL', level: 'Intermedio', progress: 65, icon: '🗄️' }
+    { name: 'Python', level: 'Advanced', progress: 85, icon: '🐍' },
+    { name: 'R', level: 'Advanced', progress: 80, icon: '📊' },
+    { name: 'Advanced Excel', level: 'Expert', progress: 95, icon: '📗' },
+    { name: 'HTML/CSS', level: 'Intermediate', progress: 70, icon: '🌐' },
+    { name: 'CFDI/XML', level: 'Expert', progress: 90, icon: '📄' },
+    { name: 'SQL', level: 'Intermediate', progress: 65, icon: '🗄️' }
   ],
   analytical: [
-    { name: 'Financial Analysis', level: 'Experto', progress: 95, icon: '💹' },
-    { name: 'Credit Risk', level: 'Experto', progress: 92, icon: '⚠️' },
-    { name: 'Data Analysis', level: 'Avanzado', progress: 88, icon: '📈' },
-    { name: 'Fiscal Compliance', level: 'Avanzado', progress: 85, icon: '✅' },
-    { name: 'Statistical Modeling', level: 'Avanzado', progress: 82, icon: '📉' },
-    { name: 'Risk Assessment', level: 'Experto', progress: 90, icon: '🎯' }
+    { name: 'Financial Analysis', level: 'Expert', progress: 95, icon: '💹' },
+    { name: 'Credit Risk', level: 'Expert', progress: 92, icon: '⚠️' },
+    { name: 'Data Analysis', level: 'Advanced', progress: 88, icon: '📈' },
+    { name: 'Fiscal Compliance', level: 'Advanced', progress: 85, icon: '✅' },
+    { name: 'Statistical Modeling', level: 'Advanced', progress: 82, icon: '📉' },
+    { name: 'Risk Assessment', level: 'Expert', progress: 90, icon: '🎯' }
   ],
   soft: [
-    { name: 'Decision-making', level: 'Experto', progress: 92, icon: '🧠' },
-    { name: 'Analytical Thinking', level: 'Experto', progress: 95, icon: '🔍' },
-    { name: 'Communication', level: 'Avanzado', progress: 85, icon: '💬' },
-    { name: 'Team Collaboration', level: 'Avanzado', progress: 88, icon: '🤝' },
-    { name: 'Problem Solving', level: 'Experto', progress: 90, icon: '🧩' },
-    { name: 'Attention to Detail', level: 'Experto', progress: 95, icon: '🔎' }
+    { name: 'Decision-making', level: 'Expert', progress: 92, icon: '🧠' },
+    { name: 'Analytical Thinking', level: 'Expert', progress: 95, icon: '🔍' },
+    { name: 'Communication', level: 'Advanced', progress: 85, icon: '💬' },
+    { name: 'Team Collaboration', level: 'Advanced', progress: 88, icon: '🤝' },
+    { name: 'Problem Solving', level: 'Expert', progress: 90, icon: '🧩' },
+    { name: 'Attention to Detail', level: 'Expert', progress: 95, icon: '🔎' }
   ]
 };
 
 const projectsData = [
   {
     id: 1,
-    title: 'Evaluación de Riesgo Crediticio CFDI',
-    description: 'Evaluación de riesgo crediticio basada en facturación electrónica (CFDI). Análisis de patrones de ingresos y cumplimiento fiscal como indicadores clave de riesgo.',
+    title: 'CFDI Credit Risk Assessment',
+    description: 'Credit risk assessment based on electronic invoicing (CFDI). Analysis of income patterns and tax compliance as key risk indicators.',
     category: 'creze',
     tags: ['CFDI', 'Risk Analysis', 'Credit'],
     icon: '📊'
   },
   {
     id: 2,
-    title: 'Modelo Automatizado en Python',
-    description: 'Desarrollo de modelo automatizado en Python para procesar datos fiscales basados en Excel. Optimización de tiempos de análisis.',
+    title: 'Automated Python Model',
+    description: 'Development of an automated Python model to process Excel-based tax data. Optimized analysis turnaround times.',
     category: 'creze',
     tags: ['Python', 'Automation', 'Excel'],
     icon: '🐍'
   },
   {
     id: 3,
-    title: 'Análisis de Operaciones Crediticias',
-    description: 'Análisis de hasta seis operaciones crediticias por día, verificando cumplimiento fiscal y patrones de ingresos.',
+    title: 'Credit Operations Analysis',
+    description: 'Analysis of up to six credit operations per day, verifying tax compliance and income patterns.',
     category: 'creze',
     tags: ['Credit Analysis', 'Fiscal', 'Daily Operations'],
     icon: '📈'
   },
   {
     id: 4,
-    title: 'Participación en Comités de Crédito',
-    description: 'Participación activa en comités de crédito, entregando insights técnicos y de negocio para la toma de decisiones.',
+    title: 'Credit Committee Participation',
+    description: 'Active participation in credit committees, delivering technical and business insights to support informed decision-making.',
     category: 'creze',
     tags: ['Committee', 'Business Insights', 'Decision Making'],
     icon: '👥'
   },
   {
     id: 5,
-    title: 'Análisis de Capacidad de Pago',
-    description: 'Recolección y análisis de datos financieros para evaluar capacidad de pago y riesgo crediticio de clientes.',
+    title: 'Payment Capacity Analysis',
+    description: 'Collection and analysis of financial data to evaluate clients\' payment capacity and credit risk.',
     category: 'quantum',
     tags: ['Financial Data', 'Payment Capacity', 'Risk'],
     icon: '💰'
   },
   {
     id: 6,
-    title: 'Mejora de Modelos Financieros',
-    description: 'Mejora de modelos financieros para optimizar procesos de análisis crediticio y reducir tiempos de evaluación.',
+    title: 'Financial Model Improvement',
+    description: 'Enhancement of financial models to optimize credit analysis processes and reduce evaluation times.',
     category: 'quantum',
     tags: ['Financial Models', 'Process Optimization', 'Analysis'],
     icon: '📉'
   },
   {
     id: 7,
-    title: 'Evaluación de Estados Financieros',
-    description: 'Evaluación de estados financieros, historial crediticio y registros de facturación para determinar perfiles de riesgo.',
+    title: 'Financial Statement Evaluation',
+    description: 'Evaluation of financial statements, credit history, and invoicing records to determine risk profiles.',
     category: 'quantum',
     tags: ['Financial Statements', 'Credit History', 'Invoicing'],
     icon: '📋'
   },
   {
     id: 8,
-    title: 'Negociación de Términos de Crédito',
-    description: 'Negociación con clientes respecto a términos de pago y límites de crédito, balanceando riesgo y oportunidad de negocio.',
+    title: 'Credit Terms Negotiation',
+    description: 'Client negotiations on payment terms and credit limits, balancing risk against business opportunity.',
     category: 'quantum',
     tags: ['Negotiation', 'Credit Limits', 'Client Relations'],
     icon: '🤝'
   }
 ];
 
+const personalProjectsData = [
+  {
+    title: 'CFDI Data Extraction Pipeline',
+    description: 'End-to-end Python pipeline that downloads, parses, and structures SAT XML invoices (CFDI) for credit risk analysis. Reduces manual processing from hours to minutes.',
+    tags: ['Python', 'XML', 'SAT', 'Automation'],
+    icon: '📄',
+    link: 'https://github.com/ArmandoMancilla'
+  },
+  {
+    title: 'SME Credit Pre-qualification Model',
+    description: 'Machine learning scoring model built with Scikit-learn to pre-qualify SME loan applicants based on CFDI income patterns, DSCR, and tax compliance indicators.',
+    tags: ['Python', 'Scikit-learn', 'Credit Risk', 'ML'],
+    icon: '🤖',
+    link: 'https://github.com/ArmandoMancilla'
+  },
+  {
+    title: 'Financial Projections Tool',
+    description: 'Automated financial projection model integrating DSCR calculations, scenario analysis, and cash flow forecasting for SME credit assessments.',
+    tags: ['Python', 'Excel', 'Financial Modeling', 'DSCR'],
+    icon: '📊',
+    link: 'https://github.com/ArmandoMancilla'
+  }
+];
+
 const certificationsData = [
   {
-    title: 'Licenciatura en Ciencias Actuariales',
+    title: 'Bachelor\'s Degree in Actuarial Science',
     issuer: 'ITAM - Instituto Tecnológico Autónomo de México',
     date: '2015 - 2022',
     icon: '🎓'
   },
   {
-    title: 'Senior Credit Analyst',
-    issuer: 'Creze',
-    date: 'Feb 2025 - Ago 2025',
-    icon: '💼'
-  },
-  {
-    title: 'Credit Risk Analyst',
-    issuer: 'Quantum FL',
-    date: 'Sep 2022 - Oct 2023',
-    icon: '📊'
+    title: 'Ethereum Developer Professional',
+    issuer: 'Blockdemy',
+    date: '2023',
+    icon: '⛓️'
   }
 ];
 
@@ -386,6 +404,32 @@ function filterProjects(filterBtn) {
 }
 
 // ============================================
+// Personal Projects Rendering
+// ============================================
+
+function renderPersonalProjects() {
+  const grid = document.getElementById('personal-projects-grid');
+  if (!grid) return;
+
+  grid.innerHTML = personalProjectsData.map((project, index) => `
+    <article class="project-card" style="animation-delay: ${index * CONFIG.animationDelay}ms">
+      <div class="project-card__image">
+        <span aria-hidden="true">${project.icon}</span>
+        <span class="project-card__category">Personal</span>
+      </div>
+      <div class="project-card__content">
+        <h3 class="project-card__title">${project.title}</h3>
+        <p class="project-card__description">${project.description}</p>
+        <div class="project-card__tags">
+          ${project.tags.map(tag => `<span class="project-card__tag">${tag}</span>`).join('')}
+        </div>
+        <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="project-card__link">View on GitHub →</a>
+      </div>
+    </article>
+  `).join('');
+}
+
+// ============================================
 // Certifications Rendering
 // ============================================
 
@@ -439,7 +483,7 @@ function initStats() {
       if (entry.isIntersecting) {
         animateCounter(elements.yearsExperience, yearsOfExperience);
         animateCounter(elements.projectsCount, projectsData.length);
-        animateCounter(elements.clientsCount, 500); // Análisis crediticios realizados
+        animateCounter(elements.clientsCount, 600);
         observer.disconnect();
       }
     });
@@ -454,23 +498,23 @@ function initStats() {
 
 const validators = {
   name: (value) => {
-    if (!value.trim()) return 'El nombre es requerido';
-    if (value.trim().length < 2) return 'El nombre debe tener al menos 2 caracteres';
+    if (!value.trim()) return 'Name is required';
+    if (value.trim().length < 2) return 'Name must be at least 2 characters';
     return '';
   },
   email: (value) => {
-    if (!value.trim()) return 'El email es requerido';
+    if (!value.trim()) return 'Email is required';
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(value)) return 'Por favor ingresa un email válido';
+    if (!emailRegex.test(value)) return 'Please enter a valid email address';
     return '';
   },
   subject: (value) => {
-    if (!value) return 'Por favor selecciona un asunto';
+    if (!value) return 'Please select a subject';
     return '';
   },
   message: (value) => {
-    if (!value.trim()) return 'El mensaje es requerido';
-    if (value.trim().length < 10) return 'El mensaje debe tener al menos 10 caracteres';
+    if (!value.trim()) return 'Message is required';
+    if (value.trim().length < 10) return 'Message must be at least 10 characters';
     return '';
   }
 };
@@ -508,37 +552,37 @@ function validateForm() {
   return isValid;
 }
 
-function handleFormSubmit(e) {
+async function handleFormSubmit(e) {
   e.preventDefault();
 
-  if (!validateForm()) {
-    return;
-  }
+  if (!validateForm()) return;
 
-  // Show loading state
   elements.submitBtn.classList.add('btn--loading');
   elements.submitBtn.disabled = true;
 
-  // Simulate form submission
-  setTimeout(() => {
-    elements.submitBtn.classList.remove('btn--loading');
-    elements.submitBtn.disabled = false;
+  try {
+    const response = await fetch('https://formspree.io/f/xqenvdbg', {
+      method: 'POST',
+      body: new FormData(elements.contactForm),
+      headers: { Accept: 'application/json' }
+    });
 
-    // Show success message
-    elements.formStatus.textContent = '¡Mensaje enviado con éxito! Te contactaré pronto.';
+    if (!response.ok) throw new Error('Server error');
+
+    elements.formStatus.textContent = 'Message sent successfully! I will contact you soon.';
     elements.formStatus.className = 'form__status success';
-
-    // Reset form
     elements.contactForm.reset();
     elements.contactForm.querySelectorAll('.form__input').forEach(field => {
       field.classList.remove('success', 'error');
     });
-
-    // Hide success message after 5 seconds
-    setTimeout(() => {
-      elements.formStatus.className = 'form__status';
-    }, 5000);
-  }, 1500);
+    setTimeout(() => { elements.formStatus.className = 'form__status'; }, 5000);
+  } catch {
+    elements.formStatus.textContent = 'Failed to send. Please email me directly at mancilla491@gmail.com';
+    elements.formStatus.className = 'form__status error';
+  } finally {
+    elements.submitBtn.classList.remove('btn--loading');
+    elements.submitBtn.disabled = false;
+  }
 }
 
 // ============================================
@@ -632,6 +676,7 @@ function init() {
   // Render dynamic content
   initSkills();
   renderProjects();
+  renderPersonalProjects();
   renderCertifications();
   initStats();
 

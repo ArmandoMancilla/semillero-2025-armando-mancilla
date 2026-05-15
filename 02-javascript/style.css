@@ -843,6 +843,19 @@ ul, ol {
   gap: var(--space-sm);
 }
 
+.project-card__link {
+  display: inline-block;
+  margin-top: var(--space-md);
+  color: var(--color-accent);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.project-card__link:hover {
+  color: var(--color-accent-light);
+}
+
 .project-card__tag {
   padding: var(--space-xs) var(--space-sm);
   background: var(--color-bg-tertiary);
@@ -940,6 +953,14 @@ ul, ol {
   flex-direction: column;
   gap: var(--space-md);
   margin-bottom: var(--space-xl);
+}
+
+.contact__social {
+  display: flex;
+  gap: var(--space-lg);
+  list-style: none;
+  padding: 0;
+  margin-top: var(--space-md);
 }
 
 .contact__method {
